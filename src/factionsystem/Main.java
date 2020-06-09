@@ -586,7 +586,7 @@ public class Main extends JavaPlugin implements Listener {
         playerCoords[1] = player.getLocation().getChunk().getZ();
         System.out.println("Checking if chunk at location of player " + player.getName() + " is claimed.");
         for (ClaimedChunk chunk : claimedChunks) {
-//            System.out.println("Comparing player coords " + playerCoords[0] + ", " + playerCoords[1] + " to chunk coords " + chunk.getCoordinates()[0] + ", " + chunk.getCoordinates()[1]);
+            System.out.println("Comparing player coords " + playerCoords[0] + ", " + playerCoords[1] + " to chunk coords " + chunk.getCoordinates()[0] + ", " + chunk.getCoordinates()[1]);
             if (playerCoords[0] == chunk.getCoordinates()[0] && playerCoords[1] == chunk.getCoordinates()[1]) {
                 System.out.println("Match!");
                 return chunk.getHolder();
