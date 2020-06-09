@@ -34,7 +34,7 @@ public class UtilityFunctions {
     }
 
     public static void sendFactionInfo(Player player, Faction faction, int power) {
-        player.sendMessage(ChatColor.BOLD + "" + ChatColor.AQUA + faction.getName() + " Faction Info" + "\n----------\n");
+        player.sendMessage(ChatColor.BOLD + "" + ChatColor.AQUA + faction.getName() + " Faction Information" + "\n----------\n");
         player.sendMessage(ChatColor.AQUA + "Name: " + faction.getName() + "\n");
         player.sendMessage(ChatColor.AQUA + "Owner: " + faction.getOwner() + "\n");
         player.sendMessage(ChatColor.AQUA + "Description: " + faction.getDescription() + "\n");
